@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Cicerone</title>
+		<!-- <meta name="description" content=""> -->
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<!-- <script src="includes/js/modernizr-2.6.2.min.js"></script> -->
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Kristi|Lovers+Quarrel|Mr+Dafoe|Rock+Salt|Ruthie" rel="stylesheet">
+		<!--for footer -->
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+	</head>
+	<body>
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+		<div id="main">
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo" id="logo"></a>
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Plan Your Day</a>
+							</li>
+							<li>
+								<a href="#">Travelogue</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Day Tour</a>
+									</li>
+									<li>
+										<a href="#">Weekend Tour</a>
+									</li>
+									<li class="divider"></li>
+									<li class="dropdown-header">More Services</li>
+									<li>
+										<a href="#">Customised Packages</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+						<form class="navbar-form pull-right">
+							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+
+						<ul class="nav nav-pills pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span> Languages <strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"> English </a>
+									</li>
+									<li>
+										<a href="#"> French </a>
+									</li>
+									<li>
+										<a href="#"> Spanish</a>
+									</li>
+								</ul>
+							</li>
+							<li role="presentation">
+								<a href="register.html">Register</a>
+							</li>
+	  					<li role="presentation" class="active">
+								<a href="#" id="modal_btn">Log In</a>
+							</li>
+							<!-- modal for Log in -->
+							<div class='content'>
+											<div id="myModal" class="modal">
+													<div class="modal-content">
+															<div class="modal-header">
+																	<span class="close" id="close">X</span>
+																	<img src="images/logo.png" alt="Logo">
+															</div>
+															<div class="modal-body">
+																<div class="input-group input-group-lg">
+																	<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user"></span></span>
+																	<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+																	<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-lock"></span></span>
+																	<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+																</div>
+															</div>
+															<div class="modal-footer">
+																<div class="btn-toolbar" role="toolbar" aria-label="...">
+																	<button type="button" class="btn btn-primary">Sign in With Facebook</button>
+																	<button type="button" class="btn btn-warning">Sign in With Google</button>
+																	<button type="submit" id="signin" class="btn btn-success">Sign in</button>
+																</div>
+															 </div>
+													</div>
+									</div>
+						</ul><!-- end nav pull-right -->
+
+					</div><!-- end nav-collapse -->
+				</div><!-- end container -->
+				</div><!-- end of navbar -->
+
+			<!--Page Header-->
+			<div class="page-header">
+				<div class="container">
+					<h1>"Serendipity was my tour guide, <small>assisted by caprice. "</small></h1>
+					<!--<h1>"There are no foreign lands. <small>It is the traveler only who is foreign. "</small></h1>-->
+  				<!--<h1>"Once a year, <small>go someplace you've never been before.. "</small></h1>-->
+					<!--<h1>"Traveling <small> - it leaves you speechless, then turns you into a storyteller."</small></h1>-->
+				</div>
+			</div>
+
+			<div class="carousel slide" id="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel"></li>
+					<li data-slide-to="1" data-target="#carousel"></li>
+					<li data-slide-to="2" data-target="#carousel"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<img src="images/italyvenice.jpg" alt="Venice" />
+						<div class="carousel-caption">
+							<div class="container">
+							<div class="row" id="clk_wthr">
+        				<div class="col-lg-6">
+									<svg id='clock' viewBox='0 0 100 100' width='200' height='200'>
+										<circle id='surface' cx='50' cy='50' r='45'/>
+											<g id='pointers'>
+												<line id='h_pointer' x1='50' y1='50' x2='50' y2='27' />
+												<line id='m_pointer' x1='50' y1='50' x2='50' y2='17' />
+												<line id='s_pointer' x1='50' y1='50' x2='50' y2='13' />
+											</g>
+											<g id='numbers'>
+												<text x='43' y='18'>12</text>
+												<text x='85' y='54'>3</text>
+												<text x='47' y='91'>6</text>
+												<text x='9' y='54'>9</text>
+											</g>
+									</svg>
+        				</div>
+        				<div class="col-lg-6">
+            			<img src="images/suncloudrain.png" alt="" width="200px;">
+        				</div>
+    					</div>
+						</div>
+							<h1>Venice</h1>
+							<p>"Venice never quite seems real, but rather an ornate film set suspended on the water."</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide2">
+						<img src="images/london.jpg" alt="London">
+						<div class="carousel-caption">
+							<h1>London</h1>
+							<p>"If you're curious, London's an amazing place."</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide3">
+						<img src="images/usa.jpg" alt="USA">
+						<div class="carousel-caption">
+							<h1>New York City </h1>
+							<p>"No place epitomizes the American experience and the American spirit more than New York City."</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#carousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#carousel"><span class="icon-next"></span></a>
+
+			</div>
+
+			<div class="container">
+				<!--Panel-->
+				<div class="row" id="featuresHeading">
+					<div class="col-12">
+						<h2>City Tour</h2>
+						<p class="lead">Some get-at-able tour suggestions</p>
+					</div><!-- end col-12 -->
+				</div><!-- end featuresHeading -->
+
+					<div class="row" id="features">
+						<div class="col-sm-4 feature">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Delicacies</h3>
+								</div><!-- end panel-heading -->
+								<img src="images/plate.png" alt="Food" class="img-circle imgpanel">
+								<p>Cicerone guarantees to give you a gastronomic experience at the best restaurants in the city.</p>
+								<a href="#" class="btn btn-link">Continue Reading..</a>
+							</div><!-- end panel -->
+						</div><!-- end feature -->
+
+						<div class="col-sm-4 feature">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Conveyance</h3>
+								</div><!-- end panel-heading -->
+								<img src="images/car.png" alt="CSS3" class="img-circle imgpanel">
+								<p>While commuting in the city, find the best routes and mode of transports from us at Cicerone.</p>
+								<a href="#" class="btn btn-link">Continue Reading..</a>
+							</div><!-- end panel -->
+						</div><!-- end feature -->
+
+						<div class="col-sm-4 feature">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Places To Visit</h3>
+								</div><!-- end panel-heading -->
+								<img src="images/camera.png" alt="Bootstrap 3" class="img-circle imgpanel">
+								<p>Cicerone guides you to the best places in and around the city. Happy Exploring!</p>
+								<a href="#" class="btn btn-link">Continue Reading..</a>
+							</div><!-- end panel -->
+						</div><!-- end feature -->
+
+					</div><!-- end features -->
+
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2s!4v1476351241312!6m8!1m7!1s9WgYUb5quXDjqqFd3DWI6A!2m2!1d46.41438376976309!2d10.01394735785013!3f210!4f10!5f1.8817596243290082"
+					width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+					<div class="row" id="moreInfo">
+						<div class="col-sm-6">
+							<h3>Quick Reckoners</h3>
+							<div class="tabbable">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#tab1" data-toggle="tab">Currency Convertor&nbsp<span class="glyphicon glyphicon-euro"></span></a></li>
+									<li><a href="#tab2" data-toggle="tab">Travel Must-Haves <span class="badge" data-toggle="tooltip" title="Badge!">2</span></a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab1">
+										<h5><span class="glyphicon glyphicon-map-gbp"></span> Calculate live currency and foreign exchange rates with this currency converter</h5>
+										<div class="form-group col-sm-6">
+										  <label for="from">From:</label>
+										  <select class="form-control" id="from">
+										    <option>Euro</option>
+										    <option>US Dollar</option>
+										    <option>INR</option>
+										    <option>Pound</option>
+										  </select>
+										</div>
+										<div class="form-group col-sm-6">
+										  <label for="from">To:</label>
+										  <select class="form-control" id="from">
+										    <option>Euro</option>
+										    <option>US Dollar</option>
+										    <option>INR</option>
+										    <option>Pound</option>
+										  </select>
+										</div>
+										  <div class="form-group col-sm-6">
+										    <div class="input-group">
+										      <input type="text" class="form-control" placeholder="Amount">
+										      <span class="input-group-btn">
+										        <button class="btn btn-default" type="button">Go!</button>
+										      </span>
+										    </div><!-- /input-group -->
+										  </div><!-- /.col-sm-6 -->
+											<div class="form-group col-sm-6">
+										    <div class="input-group">
+										      <input type="text" class="form-control" placeholder="Converted Amount">
+										    </div><!-- /input-group -->
+										  </div><!-- /.col-sm-6 -->
+
+										<div class="row">
+										  <div class="col-lg-12">
+												<img src="images/currency.png" alt="Currency" class="currencyimg">
+											</div>
+										</div>
+
+									</div><!-- end tab1-pane -->
+
+									<div class="tab-pane" id="tab2">
+
+										<h5>Put these essential travel items in your carry-on and you'll be ready for anything</h5>
+										<div class="list-group">
+											<a href="#" class="list-group-item">
+												<div class= "checkbox">
+													<label><input type="checkbox" value="" checked><h4 class="list-group-item-heading">On-The-Go Charger: <small> to stay connected. </small></h4></label>
+												</div>
+											</a>
+											<a href="#" class="list-group-item">
+												<div class= "checkbox">
+													<label><input type="checkbox" value=""><h4 class="list-group-item-heading">Adapters and Converters: <small> never leave without them when international travel is in the cards. </small></h4></label>
+												</div>
+											</a>
+											<a href="#" class="list-group-item">
+												<div class= "checkbox">
+													<label><input type="checkbox" value="" checked><h4 class="list-group-item-heading">Water Bottle: <small> keeps you hydrated &amp; reduces cost at the same time. </small></h4></label>
+												</div>
+											</a>
+											<a href="#" class="list-group-item">
+												<div class= "checkbox">
+													<label><input type="checkbox" value=""><h4 class="list-group-item-heading">Documents Pouch: <small> it is important to place documents in a safe and water resistant folder. </small></h4></label>
+												</div>
+											</a>
+											<a href="#" class="list-group-item">
+												<div class= "checkbox">
+													<label><input type="checkbox" value=""><h4 class="list-group-item-heading">Portable Hygiene Kit: <small> including sanitizers and tissues. </small></h4></label>
+												</div>
+											</a>
+										</div><!-- list-group -->
+										<hr>
+
+									</div><!-- end tab2-pane -->
+								</div><!-- end tab-content -->
+							</div><!-- end tabbable -->
+						</div><!-- end col-sm-6 -->
+
+						<div class="col-sm-6">
+							<h3>Things To Do:</h3>
+									<div class="thumbnail thingstodo">
+										<img src="images/tandemskydive.jpg" alt="PSD to HTML5 & CSS3">
+										<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>39</div>
+										<div class="caption">
+											<h3>Tandem Skydiving</h3>
+											<p><a href="#" class="btn btn-primary btn-small">Take course</a> <a href="#" class="btn btn-small btn-link">Learn more</a></p>
+										</div><!-- end caption -->
+									</div><!-- end thumbnail -->
+						</div><!-- end col-sm-6 -->
+					</div><!-- end moreInfo -->
+
+					<hr>
+		</div>
+
+		<footer id=footer>
+			<div class="supportedby">
+				<div class="container">
+					<h3>Supported By:</h3>
+					<div class="col-lg-3">
+							<img src="images/airbnb1.png" alt="Bootstrap 3" class="brandlogos">
+					</div>
+					<div class="col-lg-3">
+							<img src="images/GrabOn.png" alt="Bootstrap 3" class="brandlogos">
+					</div>
+					<div class="col-lg-3">
+							<img src="images/subway.png" alt="Bootstrap 3" class="brandlogos">
+					</div>
+					<div class="col-lg-3">
+							<img src="images/thrill.png" alt="Bootstrap 3" class="brandlogos">
+					</div>
+				</div>
+			</div>
+			<div class = "bgfooter">
+				<div class="container">
+					<div class="col-lg-3 tagtextfoot">
+						<img src="images/tag2.png" alt="" class="footertag"/>
+
+
+					</div>
+					<div class="col-lg-9 tagtextfoot">
+						<h3>About Us</h3>
+						<p>Cicerone is the biggest online platform for activities and things to do. We have 8000+ activities listed from 3500+ operators across 200+ cities in India and 15+ countries in Asia.
+With 2000+ customer reviews on the platform, we bring in transparency and credibility for our users. Our product teams hand curate operators and activity providers to ensure that each of our customer gets a delightful experience.</p>
+						<br>
+						<p>Cicerone is the biggest online platform for activities and things to do. We have 8000+ activities listed from 3500+ operators across 200+ cities in India and 15+ countries in Asia.
+						With 2000+ customer reviews on the platform, we bring in transparency and credibility for our users. Our product teams hand curate operators and activity providers to ensure that each of our customer gets a delightful experience.</p>
+
+						<ul class="social-buttons" id="demo1">
+							<li>
+								<a href="#" class="brandico-twitter-bird"></a>
+							</li>
+							<li>
+								<a href="#" class="brandico-facebook"></a>
+							</li>
+							<li>
+								<a href="#" class="brandico-instagram"></a>
+							<li>
+								<a href="#" class="brandico-vimeo"></a>
+							</li>
+							<li>
+								<a href="#" class="brandico-linkedin"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footerbottom">
+				<div class="container belowfooter">
+				</div>
+			</div>
+		</footer>
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+	<script>
+
+	//modal and clock
+	window.onload = function timerTick() {
+        with (new Date()) {
+          var h, m, s;
+
+          h = 30 * ((getHours() % 12) + getMinutes() / 60);
+          m = 6 * getMinutes();
+          s = 6 * getSeconds();
+
+          document.getElementById('h_pointer').setAttribute('transform', 'rotate(' + h + ', 50, 50)');
+          document.getElementById('m_pointer').setAttribute('transform', 'rotate(' + m + ', 50, 50)');
+          document.getElementById('s_pointer').setAttribute('transform', 'rotate(' + s + ', 50, 50)');
+
+          setTimeout(timerTick, 1000);
+        }
+
+				var btn = document.getElementById('modal_btn');
+				var modal = document.getElementById('myModal');
+				var close = document.getElementById('close');
+				var signin = document.getElementById('signin');
+				btn.onclick = function() {
+					console.log("clicked")
+						modal.style.display = "block";
+				}
+				close.onclick = function() {
+						modal.style.display = "none";
+				}
+				signin.onclick = function() {
+						modal.style.display = "none";
+				}
+				window.onclick = function(event) {
+						if (event.target == modal) {
+								modal.style.display = "none";
+						}
+				}
+				document.addEventListener('keyup', function(e) {
+						if (e.keyCode == 27) {
+							 modal.style.display = "none";
+						}
+				});
+      };
+</script>
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
